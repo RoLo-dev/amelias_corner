@@ -5,4 +5,40 @@
 }
 html{
     font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    background: rgb(241, 241, 241);
 }
+ul, ol{ list-style: none; }
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.img{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.btn{
+    border: none;
+    outline: 0;
+    background: none;
+}
+
+/*----- HEADER -----*/
+header{
+    width: 100%;
+    padding: 1.5rem 0;
+    background: #fff;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{ width: 6%; }
+nav ul li{
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+nav ul li:first-child{ margin-left: 0; }

@@ -33,7 +33,6 @@ header{
     left: 0;
     width: 100%;
     padding: 1.5rem 0;
-    /* background: #fff; */
     z-index: 10;
 }
 .main-header{
@@ -44,35 +43,44 @@ header{
 }
 .logo{ width: 9%; }
 nav ul li{
+    position: relative;
     display: inline-block;
     margin-left: 2.25rem;
 }
 nav ul li:first-child{ margin-left: 0; }
 nav ul li a{
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: 2px underline transparent;
     color: #fff;
     font-size: 1.1rem;
+    transition: all 0.3s ease-in;
 }
-/* #categories ul{ display: none; } */
+nav ul li a:hover{
+    color: rgb(182, 182, 182);
+    text-decoration-color: rgb(182, 182, 182);
+}
+
+#categories:hover{ text-decoration:none !important; }
 #categories:hover > ul{ display: block; }
 .show{ display: block !important; }
 .sub-menu{
     display: none;
+    position: absolute;
+    left: -15px;
     z-index: 5;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: #fff;
     padding: 20px 10px 20px 10px;
     border-radius: 0 0 18px 18px;
 }
 .sub-menu li{
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     display: block;
 }
 .sub-menu li a{
     color: #000;
-    text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.3s ease-in;
 }
 
 /*----- BANNER -----*/

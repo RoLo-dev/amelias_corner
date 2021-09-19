@@ -5,7 +5,7 @@
 }
 html{
     font-size: 16px;
-    font-family: Helvetica, sans-serif;
+    font-family: "Poppins" ,Helvetica, sans-serif;
     background: rgb(241, 241, 241);
 }
 ul, ol{ list-style: none; }
@@ -37,25 +37,45 @@ header{
     z-index: 10;
 }
 .main-header{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{ width: 6%; }
+.logo{ width: 9%; }
 nav ul li{
     display: inline-block;
-    margin-left: 1.5rem;
+    margin-left: 2.25rem;
 }
 nav ul li:first-child{ margin-left: 0; }
 nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+    font-size: 1.1rem;
+}
+.show{ display: block; }
+.sub-menu{
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 12.75%;
+    z-index: 5;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 10px 20px 10px;
+    border-radius: 0 0 18px 18px;
+}
+.sub-menu ul li{ margin-bottom: 10px; }
+.sub-menu ul li a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 /*----- BANNER -----*/
 .banner{
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../images/craft_banner.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/craft_banner.jpeg);
     /* background: url(../images/craft_banner.jpeg); */
     background-position: top;
     background-size: cover;
@@ -69,10 +89,15 @@ nav ul li a{
 .banner-content{
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .banner-content h1{
     font-size: 3.25rem;
+    line-height: 1;
+}
+.banner-content p{
+    font-size: 1.5rem;
 }
 
 /*----- PRODUCT SECTION -----*/
@@ -100,6 +125,7 @@ section.products{
 .productImage-container{ height: 300px; }
 .product h4{
     font-size: 1.75rem;
+    line-height: 1;
     margin-top: 1rem;
     text-transform: uppercase;
 }

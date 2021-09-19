@@ -1,6 +1,9 @@
 let categoriesLink = document.getElementById('categories')
 let subMenu = document.querySelector('.sub-menu')
 
-categoriesLink.addEventListener('mouseove', () => {
-    subMenu.classList.toggle('show')
-})
+// categoriesLink.addEventListener('mouseenter', () => {
+//     subMenu.classList.toggle('show')
+// })
+// categoriesLink.addEventListener('mouseleave', () => {
+//     subMenu.classList.remove('show')
+// })

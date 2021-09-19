@@ -7,6 +7,7 @@ html{
     font-size: 16px;
     font-family: "Poppins" ,Helvetica, sans-serif;
     background: rgb(241, 241, 241);
+    scroll-behavior: smooth;
 }
 ul, ol{ list-style: none; }
 a:active, button:active{ transform: scale(0.97); }
@@ -110,7 +111,8 @@ nav ul li a:hover{
     font-size: 1.5rem;
 }
 
-/*----- PRODUCT SECTION -----*/
+/*----- SECTION PRODUCTS -----*/
+section h2{ margin-bottom: 1rem;font-size: 2rem; }
 section.products{
     width: 100%;
     margin-top: 3rem;
